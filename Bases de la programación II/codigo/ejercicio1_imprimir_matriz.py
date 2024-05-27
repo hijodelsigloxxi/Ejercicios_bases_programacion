@@ -1,16 +1,12 @@
-def suma_elementos_matriz(m):
-    suma = 0
+#ejercicio 1: imprimir matriz
+
+def imprimir_matriz(m):
     for i in range(len(m)):
-        for j in range(len(m[0])):
-            suma = suma + m[i][j]
-    return suma
+        for j in range(len(m)):
+            print(m[i][j])
 
-m = []
-
-m2 = [[1, 2, 3],
-      [2, 2, 2],
-      [1, 2, 3],
-      [1, 2, 3]]
-
-resultado1 = suma_elementos_matriz(m)
-print(resultado1)
+m = [[1, 2, 3],
+[4, 5, 6],
+[7, 8, 9]]
+ 
+imprimir_matriz(m)
